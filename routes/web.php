@@ -16,13 +16,6 @@ use App\Http\Controllers\HomeController;
 
 Route::get('/', [HomeController::class, 'index']);
 
-Route::get('/administrator', function () {
-    return view('admin.index', [
-        "title" => "Admin Dashboard",
-        "name" => "Suprih Mulyanto",
-        "email" => "admin_dating@gmail.com"
-    ]);
-});
 
 Route::get('/redirect', [HomeController::class, 'redirect']);
 
