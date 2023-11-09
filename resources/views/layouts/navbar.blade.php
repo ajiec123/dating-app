@@ -31,11 +31,15 @@
         </div>
     </form>
     <ul class="navbar-nav navbar-right">
+        <li>
+            <x-app-layout>
+            </x-app-layout>
+        </li>
 
 
-        <li class="dropdown"><a href="#" data-toggle="dropdown"
+        {{-- <li class="dropdown"><a href="#" data-toggle="dropdown"
                 class="nav-link dropdown-toggle nav-link-lg nav-link-user">
-                <img alt="image" src="assets/img/avatar/avatar-1.png" class="rounded-circle mr-1">
+                <img alt="image" src="admin/assets/img/avatar/avatar-1.png" class="rounded-circle mr-1">
                 <div class="d-sm-none d-lg-inline-block">Hi! Suprih Mulyanto</div>
             </a>
             <div class="dropdown-menu dropdown-menu-right">
@@ -52,6 +56,6 @@
                     <i class="fas fa-sign-out-alt"></i> Logout
                 </a>
             </div>
-        </li>
+        </li> --}}
     </ul>
 </nav>

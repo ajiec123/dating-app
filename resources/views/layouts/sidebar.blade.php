@@ -14,8 +14,8 @@
                     <span>Manage All Product</span></a>
             </li>
             <li class="active">
-                <a class="nav-link" href="blank.html"><i class="far fa-plus-square"></i>
-                    <span>Add New Product</span>
+                <a class="nav-link" href="{{ url('view_catagory') }}"><i class="far fa-plus-square"></i>
+                    <span>Catagory</span>
                 </a>
             </li>
 

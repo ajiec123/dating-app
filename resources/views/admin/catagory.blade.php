@@ -43,10 +43,27 @@
             <div class="main-content">
                 <section class="section">
                     <div class="section-header">
-                        <h1>Blank Page</h1>
+                        <h1>Add New Catagory</h1>
                     </div>
 
+                    @if (session()->has('message'))
+                        <div class="alert alert-success">
+
+                            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">x</button>
+                            {{ session()->get('message') }}
+                        </div>
+                    @endif
+
                     <div class="section-body">
+                        <div class="card-body">
+                            <form action="{{ url('/add_catagory') }}" method="POST">
+                                @csrf
+
+                                <input type="text" name="catagory" placeholder="Catagory Name">
+                                <input type="submit" name="submit" class="btn btn-primary" value="Add Catagory">
+
+                            </form>
+                        </div>
                     </div>
                 </section>
             </div>
